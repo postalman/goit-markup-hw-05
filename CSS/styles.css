@@ -96,6 +96,7 @@ img {
 .nav-title:not(:last-child) {
   margin-right: 40px;
 }
+
 .adress-nav {
   margin-left: auto;
   padding-top: 24px;
@@ -144,6 +145,17 @@ img {
 .nav-link:focus {
   color: var(--pressed-state);
 }
+
+.nav-link-border::after {
+  background: #404BBF;
+  border-radius: 2px;
+  content: "";
+  position: absolute;  
+  height: 4px;
+width: 100%;
+display: block;
+bottom: 0;}
+  
 
 .address-link:hover,
 .address-link:focus {
