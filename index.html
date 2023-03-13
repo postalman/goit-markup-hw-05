@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="./CSS/styles.css" />
 
-    <title>Студія</title>
+    <title>Studio</title>
   </head>
   <body>
     <!-- Top Line -->
@@ -53,7 +53,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="orderservice">Order Service</button>
+          <button type="button" data-modal-open class="orderservice">Order Service</button>
         </div>
       </section>
 
@@ -448,5 +448,21 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" data-modal-close>
+          <svg class="modal-button-close">
+            <use href="./images/icons.svg#icon-close-button"></use>
+          </svg>
+          
+
+        </button>
+
+
+      </div>
+
+
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
